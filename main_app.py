@@ -90,7 +90,8 @@ def create_video(image_files, duplicate_count, fps, audio_path):
     output_filename = "output_video.mp4"
     final_clip.write_videofile(output_filename, codec="libx264", audio_codec="aac")
     return output_filename
-  st.set_page_config(page_title="PragyanAI Video Creator", layout="wide")
+
+st.set_page_config(page_title="PragyanAI Video Creator", layout="wide")
 
 # Display logo if it exists
 if os.path.exists("PragyanAI_Transperent.png"):
